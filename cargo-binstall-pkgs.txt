@@ -5,3 +5,7 @@ mdlink
 cargo-temp
 
 ruplacer
+
+# Firefox-specific
+cargo-vet
+treeherder-dl

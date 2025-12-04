@@ -67,3 +67,14 @@ brew "carapace"
 brew "ouch"
 
 flatpak "org.zulip.Zulip"
+
+# Firefox-specific
+
+brew "llvm"
+brew "uv"
+brew "volta"
+brew "watchman"
+brew "cargo-nextest"
+flatpak "us.zoom.Zoom"
+uv "mots"
+uv "mozphab"
