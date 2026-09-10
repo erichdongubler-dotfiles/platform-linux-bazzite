@@ -9,7 +9,7 @@ brew "wezterm/wezterm-linuxbrew/wezterm", args: ["HEAD"], trusted: true
 
 brew "jj"
 
-# `bellboy` is handled in the `README.md`.
+# `bellboy` is handled via `./cargo-binstall-pkgs.txt`.
 
 brew "nushell"
 
@@ -23,11 +23,15 @@ brew "zellij" # NOTE: `zellij web` is handled in `./README.md`.
 
 brew "topgrade"
 
+# Espanso is handled in `./README.md`.
+
+# `mdlink` is handled via `./cargo-binstall-pkgs.txt`.
+
 flatpak "org.mozilla.firefox"
 
 brew "fzf"
 
-# The Rustup toolchain is handled in the `README.md`.
+brew "rustup"
 
 brew "cargo-binstall"
 

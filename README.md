@@ -15,10 +15,40 @@ that).
 
 ## `productive`
 
-1. Install the Rust toolchain via <https://rustup.rs/>.
-   1. `cargo binstall bellboy`
-1. Use the `Brewfile` adjacent to this `README` to install the remainder
-   of preferred binarines/applications via `brew bundle install`.
+1. Use the `Brewfile` adjacent to this `README` to install the majority
+   of preferred binarines/application:
+
+   ```nushell
+   brew bundle install --file ./Brewfile
+   ```
+
+1. Finish installing a stable Rust toolchain from the `rustup` Brew package:
+
+   ```nushell
+   rustup toolchain install stable
+   ```
+
+   N.B. that binaries from this install are _not_ in `~/.cargo/bin/`, like
+   a typical Rust installation.
+
+1. `cargo-binstall` the remaining Rust binaries that have no `brew` formulae
+   in `./cargo-binstall-pkgs.txt`:
+
+   ```nushell
+   cargo-binstall -y ...(
+     open ./cargo-binstall-pkgs.txt
+       | lines
+       | each { str trim }
+       | where { not ($in | is-empty) and not ($in | str starts-with '#') }
+       | lines
+       | each { str replace --regex '(.*?)(\#.*)?' '$1' }
+       | each { str trim }
+       | where { is-not-empty }
+   )
+   ```
+
+   N.B. that binaries installed by this _are_ in `~/.cargo/bin/`.
+
 1. Install `espanso`. As of Bazzite 44, this is somewhat complicated, and may
    need to be repaired between releases.
 
