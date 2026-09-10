@@ -4,7 +4,7 @@ Erich's configuration for his Bazzite Linux machines, according to his own
 [standard](https://github.com/erichdongubler-dotfiles/standard) for
 configuration.
 
-This implements `standard` version 0.2.0.
+This implements `standard` version 0.2.1.
 
 ## `minimal`
 

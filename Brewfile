@@ -38,3 +38,5 @@ brew "tokei"
 brew "watchexec"
 
 brew "zoxide"
+
+brew "mergiraf"
