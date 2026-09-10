@@ -46,3 +46,5 @@ brew "zoxide"
 brew "mergiraf"
 
 brew "gh"
+
+brew "bat"
