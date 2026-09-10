@@ -16,7 +16,6 @@ that).
 ## `productive`
 
 1. Install the Rust toolchain via <https://rustup.rs/>.
-   1. `cargo install cargo-binstall`
    1. `cargo binstall bellboy`
 1. Use the `Brewfile` adjacent to this `README` to install the remainder
    of preferred binarines/applications via `brew bundle install`.

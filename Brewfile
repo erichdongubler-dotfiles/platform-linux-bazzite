@@ -29,6 +29,8 @@ brew "fzf"
 
 # The Rustup toolchain is handled in the `README.md`.
 
+brew "cargo-binstall"
+
 brew "fd"
 
 brew "ripgrep"
