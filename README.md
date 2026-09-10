@@ -49,24 +49,30 @@ that).
 
    N.B. that binaries installed by this _are_ in `~/.cargo/bin/`.
 
-1. Install `espanso`. As of Bazzite 44, this is somewhat complicated, and may
-   need to be repaired between releases.
+1. Set up `espanso` manually,
 
-   1. Install dependencies:
+   1. Install the `espanso` binary.
 
-      ```sh
-      rpm-ostree install wl-clipboard wxGTK
-      ```
-
-   1. Install the binary from TODO
-
-   1. Set capabilities the binary needs:
+      Combine Espanso upstream's instructions for installing from Terra repo
+      on Fedora <https://espanso.org/docs/install/linux/#terra-wayland> the
+      Terra's instructions for Bazzite:
+      <https://docs.terrapkg.com/usage/installing/#bazzite>. A script to do
+      this is as follows:
 
       ```nushell
-      sudo setcap "cap_dac_override+p" (which espanso | get path)
+      sudo sed -i '/^\[terra\]/,/^\[/s/enabled=0/enabled=1/' /etc/yum.repos.d/terra.repo
+      for pkg in [wl-clipboard wxGTK espanso-wayland] {
+         rpm-ostree install $pkg
+      }
+      sudo systemctl reboot
       ```
 
-   1. Restart, so `rpm-ostree` can take effect.
+   1. Set up `espanso` to run as a `systemd` service for your user:
+
+      ```nushell
+      espanso service register
+      systemctl --user start espanso
+      ```
 
 1. Set up `zellij web` to auto-start by:
 
