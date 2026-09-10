@@ -62,6 +62,8 @@ brew "gh"
 
 brew "bat"
 
+brew "carapace"
+
 brew "ouch"
 
 flatpak "org.zulip.Zulip"
