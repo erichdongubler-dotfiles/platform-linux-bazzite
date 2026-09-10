@@ -4,7 +4,7 @@ Erich's configuration for his Bazzite Linux machines, according to his own
 [standard](https://github.com/erichdongubler-dotfiles/standard) for
 configuration.
 
-This implements `standard` version 0.2.2.
+This implements `standard` version 0.2.3.
 
 ## `minimal`
 
@@ -38,6 +38,15 @@ that).
       ```
 
    1. Restart, so `rpm-ostree` can take effect.
+
+1. Set up `zellij web` to auto-start by:
+
+   ```nushell
+   # In this project's root:
+   cp ./zellij-web.service ~/.config/systemd/user/
+   systemctl --user enable zellij-web
+   systemctl --user start zellij-web
+   ```
 
 ## `full`
 
