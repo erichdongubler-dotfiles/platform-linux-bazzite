@@ -17,6 +17,24 @@ default. You just need `brew install gpatch` now (which is included in
    1. `cargo binstall bellboy`
 1. Use the `Brewfile` adjacent to this `README` to install the remainder
    of preferred binarines/applications via `brew bundle install`.
+1. Install `espanso`. As of Bazzite 44, this is somewhat complicated, and may
+   need to be repaired between releases.
+
+   1. Install dependencies:
+
+      ```sh
+      rpm-ostree install wl-clipboard wxGTK
+      ```
+
+   1. Install the binary from TODO
+
+   1. Set capabilities the binary needs:
+
+      ```nushell
+      sudo setcap "cap_dac_override+p" (which espanso | get path)
+      ```
+
+   1. Restart, so `rpm-ostree` can take effect.
 
 ## `full`
 
