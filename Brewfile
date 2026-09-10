@@ -4,8 +4,6 @@ brew "gpatch"
 
 # `productive`, in order of the `standard` list
 
-flatpak "org.mozilla.firefox"
-
 tap "wezterm/wezterm-linuxbrew"
 brew "wezterm/wezterm-linuxbrew/wezterm", args: ["HEAD"], trusted: true
 
@@ -24,6 +22,8 @@ brew "atuin"
 brew "zellij" # NOTE: `zellij web` is handled in `./README.md`.
 
 brew "topgrade"
+
+flatpak "org.mozilla.firefox"
 
 brew "fzf"
 
