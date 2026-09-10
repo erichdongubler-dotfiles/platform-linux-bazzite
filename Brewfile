@@ -56,3 +56,5 @@ brew "mergiraf"
 brew "gh"
 
 brew "bat"
+
+brew "carapace"
