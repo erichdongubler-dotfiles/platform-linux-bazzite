@@ -10,7 +10,8 @@ This implements `standard` version 0.2.2.
 
 You're already mostly done! `git` and `ssh` are on Bazzite's OS image by
 default. You just need `brew install gpatch` now (which is included in
-`productive`'s steps, if you just want to follow that).
+`productive`'s step to install from `./Brewfile`, if you just want to follow
+that).
 
 ## `productive`
 
