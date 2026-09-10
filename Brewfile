@@ -7,7 +7,7 @@ brew "gpatch"
 flatpak "org.mozilla.firefox"
 
 tap "wezterm/wezterm-linuxbrew"
-brew "wezterm/wezterm-linuxbrew/wezterm", args: ["HEAD"]
+brew "wezterm/wezterm-linuxbrew/wezterm", args: ["HEAD"], trusted: true
 
 brew "jj"
 
