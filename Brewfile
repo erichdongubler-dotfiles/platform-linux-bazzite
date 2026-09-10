@@ -40,3 +40,5 @@ brew "watchexec"
 brew "zoxide"
 
 brew "mergiraf"
+
+brew "gh"
