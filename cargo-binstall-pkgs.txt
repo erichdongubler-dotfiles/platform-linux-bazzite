@@ -1,3 +1,5 @@
 bellboy
 espanso
 mdlink
+
+cargo-temp

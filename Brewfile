@@ -35,7 +35,12 @@ flatpak "org.gnome.meld"
 
 brew "rustup"
 
+brew "cargo-audit"
 brew "cargo-binstall"
+brew "cargo-deny"
+brew "cargo-outdated"
+brew "cargo-release"
+brew "cargo-update"
 
 brew "fd"
 
