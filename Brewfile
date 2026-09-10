@@ -2,7 +2,7 @@
 
 brew "gpatch"
 
-# `productive`
+# `productive`, in order of the `standard` list
 
 flatpak "org.mozilla.firefox"
 
@@ -18,6 +18,8 @@ brew "nushell"
 brew "starship"
 
 brew "neovim"
+
+brew "atuin"
 
 brew "fzf"
 
@@ -36,5 +38,3 @@ brew "tokei"
 brew "watchexec"
 
 brew "zoxide"
-
-brew "atuin"
