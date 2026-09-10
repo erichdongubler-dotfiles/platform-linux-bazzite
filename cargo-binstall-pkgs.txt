@@ -3,3 +3,5 @@ espanso
 mdlink
 
 cargo-temp
+
+ruplacer

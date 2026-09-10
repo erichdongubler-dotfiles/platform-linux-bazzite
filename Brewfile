@@ -61,3 +61,7 @@ brew "mergiraf"
 brew "gh"
 
 brew "bat"
+
+brew "ouch"
+
+flatpak "org.zulip.Zulip"
