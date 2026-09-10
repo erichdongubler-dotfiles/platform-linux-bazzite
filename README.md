@@ -4,6 +4,8 @@ Erich's configuration for his Bazzite Linux machines, according to his own
 [standard](https://github.com/erichdongubler-dotfiles/standard) for
 configuration.
 
+This implements `standard` version 0.2.0.
+
 ## `minimal`
 
 You're already mostly done! `git` and `ssh` are on Bazzite's OS image by
