@@ -23,6 +23,8 @@ brew "atuin"
 
 brew "zellij" # NOTE: `zellij web` is handled in `./README.md`.
 
+brew "topgrade"
+
 brew "fzf"
 
 # The Rustup toolchain is handled in the `README.md`.
