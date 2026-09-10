@@ -31,6 +31,8 @@ flatpak "org.mozilla.firefox"
 
 brew "fzf"
 
+flatpak "org.gnome.meld"
+
 brew "rustup"
 
 brew "cargo-binstall"
